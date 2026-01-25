@@ -1,0 +1,183 @@
+@import "tailwindcss";
+:root {
+    --color-main : #329F92;
+    --color-main1: #F8F9FA;
+    --color-main2: #DDDDDD;
+    --color-main3: #CCCCCC;
+    --color-main4: #666666;
+    --color-main5: #000000;
+    --color-main6: #E9C46A;
+    --color-main7: #C4CAC9;
+    --color-main8: #2A9D8F;
+    --color-main9: #264653;
+    --color-main10: #F1F5F9;
+    --color-main11: #30566496;
+} 
+@theme {
+    --color-main : #329F92;
+    --color-main1: #F8F9FA;
+    --color-main2: #DDDDDD;
+    --color-main3: #CCCCCC;
+    --color-main4: #666666;
+    --color-main5: #000000;
+    --color-main6: #E9C46A;
+    --color-main7: #C4CAC9;
+    --color-main8: #2A9D8F;
+    --color-main9: #264653;
+    --color-main10: #F1F5F9;
+    --color-main11: #212529;
+    --color-main12: #30566496;
+}
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.back::before {
+    content: "";
+    position: absolute;
+    background-color: #000000a9;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.input:hover {
+    background-color: var(--color-main6);
+    transform: translateY(-5px);
+}
+.home::before {
+    content: "";
+    position: absolute;
+    background-color: var(--color-main);
+    width: 5%;
+    left: 50%;
+    top: 60px;
+    height: 3px;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+.photo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    transition: all .4s ease;
+}
+.photo:hover {
+    transform: scale(1.1);
+}
+.botton {
+    padding: 1rem 1.5rem;
+    color: var(--color-main1);
+    background-color: var(--color-main);
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all .3s ease;
+    max-width: fit-content;
+    cursor: pointer;
+}
+.botton:hover {
+    background-color: var(--color-main6);
+    transform: translateY(-5px);
+}
+.forsomebotton {
+    box-shadow: 0 8px 20px 2px #CCCCCC;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px #dddfdf9e;
+}
+.card-2::before {
+    content: "";
+    position: absolute;
+    background-color: var(--color-main);
+    border-radius: 10px;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 5px;
+    transition: all .3s ease-in-out;
+}
+.card-2:hover::before {
+    width: 100%;
+}
+.stylecard {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.home2::before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--color-main);
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.shadow1 {
+    box-shadow: 0 8px 20px 2px #CCCCCC;
+}
+.link:hover {
+    color: var(--color-main6);
+    transition: all .3s ease;
+}
+.headlink:before {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    top: 25px;
+    left: 0;
+}
+.headlink:hover::before {
+    width: 100%;
+    background-color: var(--color-main6);
+    transition: all .3s linear;
+}
+.forright {
+    transform: translateX(50%);
+}
+.input2 {    
+    padding: 13px;
+    border: .5px solid #6666667b;
+    border-radius: 5px;
+    width: 100%;
+}
+.input2:focus {
+    outline: none;
+    box-shadow: 0 0 10px 0px #329f9270;
+}
+.footerlink:hover {
+    background-color: var(--color-main);
+    transform: translateY(-3px);
+}
+.footerlink2:hover {
+    transform: translateX(4px);
+    color: var(--color-main6); 
+}
+.under-line:before {
+    content: "";
+    background-color: #2A9D8F;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 15%;
+    height: 2px;
+    border-radius: 10px;
+}
