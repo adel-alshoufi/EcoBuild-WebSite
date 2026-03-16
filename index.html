@@ -13,10 +13,15 @@
         <h2 class="font-bold text-main text-3xl text-center">
             <span class="text-main6">Eco</span>Build
         </h2>
-        <button class="cursor-pointer" id="menu"><svg id="menu" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><title xmlns="">list</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 6h14M7 12h14M7 18h14M3 18" class="text-white"/></svg></button>
-        <nav class="mobile-nav hidden">
+        <button class="cursor-pointer menu-btn" id="menu" aria-label="Open menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 6h14M7 12h14M7 18h14" class="text-white"/></svg>
+        </button>
+        <nav class="mobile-nav">
+            <button class="close-btn" id="close-menu" aria-label="Close menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
             <ul class="list-none flex gap-8 text-main1 px-12 font-medium">
-                <li class="relative headlink link"><a href="#hero">Home</li>
+                <li class="relative headlink link"><a href="#hero">Home</a></li>
                 <li class="relative headlink link"><a href="#story">About</a></li>
                 <li class="relative headlink link"><a href="#serv">Services</a></li>
                 <li class="relative headlink link"><a href="#ourwork">Projects</a></li>
@@ -298,7 +303,7 @@
                 <input type="button" value="Subscribe" class="botton font-bold pt-3! pb-3! pl-5! pr-5!">
             </div>
         </div>
-        <div class="h-px w-[80%] bg-main4 mt-6"></div>
+    <script src="main.js"></script>main4 mt-6"></div>
         <div class="mt-10">
             <p class="text-white">© 2025 EcoBuild. All Rights Reserved. | Designed with for a Sustainable Future</p>
         </div>
