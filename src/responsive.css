@@ -1,4 +1,6 @@
-/* Menu button hidden on large screens, nav visible */
+/* === Default: large screens === */
+
+/* hide menu button, show nav links normally */
 .menu-btn {
     display: none;
 }
@@ -7,11 +9,12 @@
     display: flex;
 }
 
+/* close button always hidden unless menu is open */
 .close-btn {
     display: none;
 }
 
-/* Mobile nav open state */
+/* === Mobile menu open state (all small screens) === */
 .mobile-nav.nav-open {
     display: flex !important;
     flex-direction: column;
@@ -20,8 +23,8 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.92);
-    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.93);
+    z-index: 999;
     justify-content: center;
     align-items: center;
 }
@@ -38,20 +41,26 @@
 }
 
 .mobile-nav.nav-open ul {
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: center;
-    gap: 30px;
+    gap: 32px !important;
     font-size: 1.4rem;
-    padding: 0;
+    padding: 0 !important;
 }
 
 @media (min-width: 300px) and (max-width: 667px) {
+
+    /* show hamburger, hide nav links */
     .menu-btn {
         display: flex;
     }
 
-    .mobile-nav:not(.nav-open) {
+    .mobile-nav {
         display: none;
+    }
+
+    .mobile-nav.nav-open {
+        display: flex !important;
     }
 
     html {
@@ -250,12 +259,18 @@
 }
 
 @media (min-width: 667px) and (max-width: 1024px) {
+
+    /* show hamburger, hide nav links */
     .menu-btn {
         display: flex;
     }
 
-    .mobile-nav:not(.nav-open) {
+    .mobile-nav {
         display: none;
+    }
+
+    .mobile-nav.nav-open {
+        display: flex !important;
     }
 
     html {

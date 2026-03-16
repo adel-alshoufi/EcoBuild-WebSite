@@ -1,10 +1,7 @@
-const $ = selector => document.querySelector(selector);
-const $$ = selector => document.querySelectorAll(selector);
-
-const menuButton = $("#menu");
-const closeButton = $("#close-menu");
-const mobileNav = $(".mobile-nav");
-const mobileNavLinks = $$(".mobile-nav li");
+const menuButton = document.getElementById("menu");
+const closeButton = document.getElementById("close-menu");
+const mobileNav = document.querySelector(".mobile-nav");
+const mobileNavLinks = document.querySelectorAll(".mobile-nav a");
 
 menuButton.addEventListener("click", () => {
     mobileNav.classList.add("nav-open");
